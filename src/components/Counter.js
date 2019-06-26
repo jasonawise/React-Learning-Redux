@@ -4,9 +4,10 @@ import { decrement, increment } from '../redux/actions';
 
 class Counter extends Component {
   render() {
+    console.log(this.props);
     return (
       <div>
-        {this.props.state}
+        {this.props.state.count}
         <div>
           <button type="button" onClick={this.props.increment}>
             +
@@ -15,6 +16,7 @@ class Counter extends Component {
             -
           </button>
         </div>
+        {this.props.state.text}
       </div>
     );
   }
