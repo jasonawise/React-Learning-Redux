@@ -1,4 +1,6 @@
-function counter(state = 0, action) {
+const defualtState = 1;
+
+function counter(state = defualtState, action) {
   switch (action.type) {
     case 'INCREMENT':
       return state + 1;
